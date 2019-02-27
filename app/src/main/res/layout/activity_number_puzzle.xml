@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PuzzleGame.NumberPuzzle"
+    android:orientation="vertical"
+    android:weightSum="3.5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#665E5E">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn1"
+            android:layout_weight="1"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_40sdp"
+            android:background="@drawable/puzzlebtn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn2"
+            android:layout_weight="1"
+            android:text="2"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_40sdp"
+            android:background="@drawable/puzzlebtn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn3"
+            android:layout_weight="1"
+            android:text="3"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_40sdp"
+            android:background="@drawable/puzzlebtn"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#665E5E">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn4"
+            android:layout_weight="1"
+            android:text="4"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_40sdp"
+            android:background="@drawable/puzzlebtn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn5"
+            android:layout_weight="1"
+            android:text="5"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_40sdp"
+            android:background="@drawable/puzzlebtn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn6"
+            android:layout_weight="1"
+            android:text="6"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_40sdp"
+            android:background="@drawable/puzzlebtn"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#665E5E">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn7"
+            android:layout_weight="1"
+            android:text="7"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_40sdp"
+            android:background="@drawable/puzzlebtn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn8"
+            android:layout_weight="1"
+            android:text="8"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_40sdp"
+            android:background="@drawable/puzzlebtn"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn9"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/BestTime"
+                android:text="Best Time :"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Time"
+                android:text=""
+                android:textSize="@dimen/_20sdp"
+                android:textColor="#000000"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CurrentTime"
+                android:text="Current Time :"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Time2"
+                android:text=""
+                android:textSize="@dimen/_20sdp"
+                android:textColor="#000000"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/move"
+                android:text="Moves :"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/steps"
+                android:text=""
+                android:textSize="@dimen/_20sdp"
+                android:textColor="#000000"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
