@@ -20,18 +20,18 @@ public class FragmentContainer extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-            Home fragment = null;
+            Fragment fragment = null;
 
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     fragment = new Home();
                     break;
                 case R.id.navigation_dashboard:
-                    fragment = new Home();
+                    fragment = new Dashboard();
                     break;
                 case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
+                    fragment = new Notification();
+                    break;
             }
             return false;
         }
